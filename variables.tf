@@ -25,5 +25,5 @@ variable "bundle_id" {
 variable "lightsail_key_pair" {
   type        = string
   description = "Key pair used for ssh access"
-  default     = "LightsailDefaultKey-ap-southeast-1.pem"
+  default     = "lightsail-apse1"
 }
