@@ -23,6 +23,6 @@ resource "aws_lightsail_static_ip_attachment" "wp-lightsail-demo" {
 
   depends_on = [
     aws_lightsail_instance.wp_lightsail_demo,
-    aws_lightsail_static_ip.wp_lightsail_demo
+    aws_lightsail_static_ip.wp_lightsail_demo_static_ip
   ]
 }
