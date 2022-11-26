@@ -13,12 +13,12 @@ resource "aws_lightsail_instance" "wp_lightsail_demo" {
   }
 }
 
-resource "aws_lightsail_static_ip" "wp_lightsail_demo" {
-  name = "wp-lightsail-demo"
+resource "aws_lightsail_static_ip" "wp_lightsail_demo_static_ip" {
+  name = "wp-lightsail-demo-static-ip"
 }
 
 resource "aws_lightsail_static_ip_attachment" "wp-lightsail-demo" {
-  static_ip_name = aws_lightsail_static_ip.wp_lightsail_demo.id
+  static_ip_name = aws_lightsail_static_ip.wp_lightsail_demo_static_ip.id
   instance_name  = "wp-lightsail-demo"
 
   depends_on = [
